@@ -1,0 +1,16 @@
+{
+    "settings": {
+        "hwthreshold": 45
+    },
+    "devices": {
+        "hwPump": true,
+        "chPump": false,
+        "boiler": true
+    },
+    "sensors": {
+        "hw": 51, 
+        "bedroom": 18, 
+        "loft": 7, 
+        "garage": 11 
+    }
+}

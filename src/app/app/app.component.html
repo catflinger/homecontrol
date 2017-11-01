@@ -1,0 +1,42 @@
+<div class="container">
+    <h1>Drumtochty Heating</h1>
+
+    <h3>Temperature Readings</h3>
+    <table class="table" *ngIf="status">
+        <tbody>
+            <tr>
+                <td>Hot Water</td>
+                <td>{{status.sensors.hw}}</td>
+            </tr>
+            <tr>
+                <td>Bedroom</td>
+                <td>{{status.sensors.bedroom}}</td>
+            </tr>
+            <tr>
+                <td>Garage</td>
+                <td>{{status.sensors.garage}}</td>
+            </tr>
+            <tr>
+                <td>Loft</td>
+                <td>{{status.sensors.loft}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Boiler status</h3>
+    <table class="table" *ngIf="status">
+        <tbody>
+            <tr>
+                <td>Boiler</td>
+                <td>{{status.devices.boiler? "ON" : "OFF"}}</td>
+            </tr>
+            <tr>
+                <td>Heating Pump</td>
+                <td>{{status.devices.chPump? "ON" : "OFF"}}</td>
+            </tr>
+            <tr>
+                <td>Hot Water Pump</td>
+                <td>{{status.devices.hwPump? "ON" : "OFF"}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
